@@ -1,0 +1,5 @@
+package com.technoelevatescrum2.ems.service;
+
+public class EmployeeServiceImpl {
+
+}
