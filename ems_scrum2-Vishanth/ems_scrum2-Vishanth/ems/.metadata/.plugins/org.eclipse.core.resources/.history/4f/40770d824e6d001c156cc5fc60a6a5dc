@@ -1,0 +1,5 @@
+package com.technoelevatescrum2.ems.beans;
+
+public class EmployeeInfo {
+
+}
