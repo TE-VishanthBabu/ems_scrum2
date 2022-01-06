@@ -46,4 +46,37 @@ public class EmployeeServiceImpl implements EmployeeService{
 		return ad.findAll();
 	}
 
+	@Override
+	@Transactional
+	public EmployeeAdd update(EmployeeAdd info) {
+		EmployeeAdd old=new EmployeeAdd();
+		
+		if(info.getName()!=null) {
+			old.setName(info.getName());
+		}else {
+			old.setName(old.getName());
+		}
+		
+		if(info.getDesignation()!=null) {
+			old.setDesignation(info.getDesignation());
+		}else {
+			old.setDesignation(old.getDesignation());
+		}
+		if(info.getSalary() != null) {
+			old.setSalary(info.getSalary());
+		
+		}else {
+			old.setSalary(old.getSalary());
+		}
+		if(info.getAge() != null ) {
+			old.setAge(info.getAge());
+		}else {
+			old.setAge(old.getAge());
+		}
+		return ad.save(info);
+		
+		
+	}
+	
+
 }

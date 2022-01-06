@@ -13,4 +13,6 @@ public interface EmployeeService {
 	
 	public List<EmployeeAdd> getdata();
 	
+	public EmployeeAdd update(EmployeeAdd info);
+	
 }
