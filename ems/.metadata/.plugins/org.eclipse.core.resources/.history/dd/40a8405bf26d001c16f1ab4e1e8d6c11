@@ -1,0 +1,5 @@
+package com.technoelevatescrum2.ems.exception;
+
+public class DeleteException {
+
+}
