@@ -12,5 +12,4 @@ public interface EmployeeDao extends JpaRepository<EmployeeInfo, String>{
 
 	public void deleteById(String email);
 
-	
 }

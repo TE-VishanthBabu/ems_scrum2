@@ -38,8 +38,6 @@ public class EmployeeInfo implements Serializable{
 	@NotEmpty(message = "UserName should not be Empty")
 	private String userName;
 	
-	
-	
 	@Column(name = "Password")
 	@Pattern(regexp = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#&()–[{}]:;',?/*~$^+=<>]).{6,20}$", message = "Password must be atleast 6 characters, One Uppercase, One Lowercase, One Number and One Special Characters")
 	@NotNull(message = "Password should not be Null")
